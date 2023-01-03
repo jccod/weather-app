@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './App.css'
+import videoBg from '../src/assets/video/sky.mp4'
 
 function App() {
 
@@ -54,9 +55,9 @@ function App() {
             <p className='card__more-label'>Pressure</p>
           </div>
         </div>
-
         <button onClick={changeUnit}>Change Units</button>
       </div>
+      <video src={videoBg} autoPlay loop muted></video>
     </div>
   )
 }
